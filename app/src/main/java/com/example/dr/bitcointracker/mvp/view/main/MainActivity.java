@@ -68,6 +68,14 @@ public class MainActivity extends BaseActivity implements MainMvpView, RangeSeek
         rangeBar.setNotifyWhileDragging(false);
         rangeBar.setTextAboveThumbsColor(android.R.color.transparent);
 
+
+
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        mMainPresenter.initialize();
         // Register online / offline detection to start / stop interval update for chart
         networkStateReceiver = new BroadcastReceiver() {
 
@@ -93,22 +101,20 @@ public class MainActivity extends BaseActivity implements MainMvpView, RangeSeek
     }
 
     @Override
-    protected void onStart() {
-        super.onStart();
-        mMainPresenter.initialize();
-    }
-
-    @Override
     protected void onStop() {
         super.onStop();
         mMainPresenter.stopRefreshingChartDataFromNetwork();
+        try {
+            unregisterReceiver(networkStateReceiver);
+        } catch (Exception e){
+
+        }
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
         mMainPresenter.detachView();
-        unregisterReceiver(networkStateReceiver);
     }
 
     @Override
