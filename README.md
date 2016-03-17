@@ -24,6 +24,7 @@ Uses the blockchain API (See: https://blockchain.info/charts/market-price and ht
 - Find a better api that supports getting incremental data (currently always fetching all data)
 - UI -> Improve chart to have date columns (better UX)
 - Remove toasts displaying online / offline status (left for testing purposes)
+- Could be improved (especially code size) using retrolambda
 
 ## License
 
