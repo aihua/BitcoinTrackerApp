@@ -16,18 +16,19 @@ Uses the blockchain API (See: https://blockchain.info/charts/market-price and ht
 - [Robolectric](http://robolectric.org/)
 - [Mockito](http://mockito.org/)
 
-## Notes
+## Notes / Improvements
 
 - UI testing missing
 - Instrumentation testing in progress
 - Write more unit tests
 - Find a better api that supports getting incremental data (currently always fetching all data)
 - UI -> Improve chart to have date columns (better UX)
+- Remove toasts displaying online / offline status (left for testing purposes)
 
 ## License
 
 ```
-    Copyright 2015 Denis Ramic
+    Copyright 2016 Denis Ramic
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
