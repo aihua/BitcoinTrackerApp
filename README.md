@@ -1,6 +1,8 @@
 # BitcoinTracker Android app
 Demo app for live tracking bitcoin / USD market price with "go to past" function
 
+<img src="https://github.com/ramden/BitcoinTrackerApp/raw/master/images/bitcointracker.png" alt="alt text" height="500">
+
 ## Libraries and tools included:
 
 - Support libraries
