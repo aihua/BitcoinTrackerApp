@@ -1,5 +1,5 @@
 # BitcoinTracker Android app
-Demo app for live tracking bitcoin / USD market price with "go to past" function.
+Demo app for live tracking bitcoin / USD market price with "go to past" function using RxJava and MVP pattern.
 Uses the blockchain API (See: https://blockchain.info/charts/market-price and https://blockchain.info/api/charts_api)
 
 <img src="https://github.com/ramden/BitcoinTrackerApp/raw/master/images/bitcointracker.png" alt="alt text" height="500">
